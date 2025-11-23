@@ -190,3 +190,28 @@ header,
   max-width: 600px;
   text-align: start;
 }
+#section6 {
+  background-color: #071629;
+  color: aliceblue;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Source Sans Pro";
+}
+#section6 > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 150px;
+}
+#section6 > div > div {
+  display: flex;
+  gap: 10px;
+  filter: brightness(0) saturate(100%) invert(85%) sepia(20%) hue-rotate(180deg);
+}
+#socal {
+  gap: 16px;
+}
+#foot {
+  color: gray;
+  padding-bottom: 20px;
+  font-size: small;
+}
