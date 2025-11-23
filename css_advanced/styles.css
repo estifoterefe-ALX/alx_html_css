@@ -48,7 +48,7 @@
   margin: 20px;
   font-size: 5rem;
 }
-#buttonHeader {
+.buttonHeader {
   margin-top: 20px;
   border-radius: 20px;
   border: none;
@@ -56,6 +56,7 @@
   color: aliceblue;
   background-color: rgb(163, 91, 230);
   font-family: "Source Sans Pro";
+  margin-bottom: 40px;
 }
 #hero {
   width: 100%;
@@ -85,7 +86,7 @@ header,
   font-family: "Source Sans Pro";
 }
 #highlight {
-  color: purple;
+  color: #c271ff;
 }
 #users > div > img {
   border-radius: 50%;
@@ -151,4 +152,22 @@ header,
 .play {
   position: absolute;
   margin: 40px -150px;
+}
+#section4 {
+  background-color: #071629;
+  color: aliceblue;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Source Sans Pro";
+}
+#section4container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 150px;
+}
+.para2 {
+  text-align: left;
+}
+#section4 > h2 {
+  padding-top: 40px;
 }
