@@ -105,3 +105,50 @@ header,
 #section2Content > p {
   margin-left: 50px;
 }
+#section3 {
+  display: block;
+  font-family: "Source Sans Pro";
+  margin: 0 auto;
+  text-align: center; /* optional: center text inside */
+  padding-top: 100px;
+}
+#section3 > h2 {
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: normal;
+}
+#section3Container {
+  display: flex;
+  padding: 100px 150px;
+}
+#section3Container > div > h3 {
+  text-align: start;
+}
+.para {
+  text-align: start;
+  color: gray;
+}
+.star,
+.staruser {
+  display: flex;
+}
+.staruser > img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.staruser > h4 {
+  color: #c271ff;
+}
+.min {
+  margin-top: -20px;
+  margin-left: 100px;
+  color: #c271ff;
+}
+.star {
+  color: #c271ff;
+}
+.play {
+  position: absolute;
+  margin: 40px -150px;
+}
