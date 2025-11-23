@@ -90,3 +90,18 @@ header,
 #users > div > img {
   border-radius: 50%;
 }
+
+#section2 {
+  display: flex;
+  background-color: #c271ff;
+  padding: 100px 150px;
+}
+#section2Content {
+  display: block;
+  font-family: "Source Sans Pro";
+  color: aliceblue;
+}
+#section2Content > h3,
+#section2Content > p {
+  margin-left: 50px;
+}
