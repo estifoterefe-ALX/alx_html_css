@@ -1,0 +1,47 @@
+h1 {
+  color: #071629;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form input[type="text"],
+form input[type="email"] {
+  width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  outline: none;
+  border-bottom: 2px solid #ff5e5e;
+}
+form input::placeholder {
+  color: #071629;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+}
+form button {
+  background-color: #ff5e5e;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  margin-top: 40px;
+  width: 150px;
+}
