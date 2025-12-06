@@ -29,6 +29,10 @@ li {
   font-weight: bold;
   font-size: 12px;
 }
+li:hover {
+  cursor: pointer;
+  color: #ff6565;
+}
 
 /* MAIN */
 main {
