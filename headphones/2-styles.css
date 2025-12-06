@@ -1,0 +1,82 @@
+h1 {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  margin-top: 200px;
+}
+body {
+  background-image: url(/headphones/images/headphones_hero_2.jpg);
+  background-size: cover;
+}
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px auto;
+  max-width: fit-content;
+  padding: 0 100px;
+}
+
+.p {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+#iconDiv {
+  display: flex;
+  flex-wrap: wrap; /* allow items to wrap to next line */
+  justify-content: center; /* center the rows horizontally */
+  margin: 9% auto;
+  padding: 0 100px;
+}
+
+img {
+  width: 190px;
+  height: 190px;
+  background: none;
+}
+h5 {
+  color: #ffffff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#iconDiv > div {
+  position: relative; /* needed for overlay positioning */
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  margin-bottom: 8%;
+  text-align: center; /* center image horizontally */
+}
+
+.overlay {
+  position: absolute; /* position on top of the image */
+  top: 50%; /* vertical center */
+  left: 50%; /* horizontal center */
+  transform: translate(-50%, -50%); /* truly center the overlay */
+  color: white;
+  text-align: center; /* center text inside overlay */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.overlay h5 {
+  margin: 0;
+  margin-top: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.overlay p {
+  font-size: 1rem;
+}
