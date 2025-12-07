@@ -1,4 +1,4 @@
-body {
+#hero {
   background-image: url(/headphones/images/headphones_hero_1.jpg);
   background-size: cover;
   background-position: center;
@@ -7,14 +7,14 @@ body {
 }
 
 /* HEADER */
-header {
+#hero > header {
   display: flex;
   align-items: center;
   padding: 20px;
   position: relative;
 }
 
-ul {
+#hero > header ul {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -23,19 +23,19 @@ ul {
   padding-right: 40px;
 }
 
-li {
+#hero > header li {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
   font-size: 12px;
 }
-li:hover {
+#hero > header li:hover {
   cursor: pointer;
   color: #ff6565;
 }
 
 /* MAIN */
-main {
+#hero > main {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
@@ -46,7 +46,7 @@ main {
   padding: 0 20px; /* keeps spacing on mobile */
 }
 
-h1 {
+#hero > main > h1 {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
@@ -54,7 +54,7 @@ h1 {
   margin-top: 150px; /* reduced to avoid overflow on mobile */
 }
 
-h4 {
+#hero > main > h4 {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: bold;
@@ -62,7 +62,7 @@ h4 {
   margin-top: -20px;
 }
 
-p {
+#heroid {
   color: #ffffff;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
@@ -70,7 +70,7 @@ p {
   max-width: 600px;
 }
 
-button {
+#hero > main > button {
   background-color: #ff6565;
   color: #ffffff;
   border: none;
@@ -84,7 +84,7 @@ button {
 }
 
 /* LOGO */
-img {
+#hero > header > img {
   width: 161px;
   height: auto; /* keeps same width but responsive height */
   margin-left: 5vw; /* replaces fixed 250px */
@@ -101,28 +101,28 @@ img {
 
 /* === RESPONSIVE ADJUSTMENTS === */
 @media (max-width: 480px) {
-  header {
+  #hero > header {
     gap: 45px;
     padding: 20px 0px;
   }
 
-  img {
+  #hero > header > img {
     margin-left: 0; /* centers logo on mobile */
   }
 
-  h1 {
+  #hero > main > h1 {
     margin-top: 80px;
     font-size: 28px;
   }
 
-  h4 {
+  #hero > main > h4 {
     font-size: 15px;
   }
 
-  p {
+  #heroid {
     font-size: 14px;
   }
-  ul {
+  #hero > header > ul {
     display: none; /* hide menu by default */
     flex-direction: column;
     position: absolute;
@@ -137,7 +137,7 @@ img {
     display: block; /* show hamburger */
   }
 
-  ul.active {
+  #hero > header > ul.active {
     display: flex; /* show menu when active */
   }
 }

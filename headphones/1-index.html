@@ -9,49 +9,87 @@
   </head>
   <body>
     <main>
-      <h1>What we do ...</h1>
-      <p id="mainP">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit
-        amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur.
-      </p>
-      <div id="iconDiv">
-        <div>
-          <i class="holberton_school-icon-ic_sound"></i>
-          <h5>Lorem ipsum</h5>
-          <p class="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <section id="hero">
+        <header>
+          <button id="menu-btn" class="menu-btn">&#9776;</button>
+          <img src="images/logo_headphones.png" alt="logo" />
+          <ul id="ulList">
+            <li>What we do</li>
+            <li>Our result</li>
+            <li>Contact us</li>
+          </ul>
+        </header>
+        <main>
+          <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+          <h4>Lorem ipsum dolor set amet lorem ipsum dolor set</h4>
+          <button>CALL TO ACTION</button>
+          <p id="heroid">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
           </p>
+        </main>
+      </section>
+
+      <section id="whatWeDo">
+        <h1>What we do ...</h1>
+        <p id="mainP">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
+        </p>
+        <div id="iconDiv">
+          <div>
+            <i class="holberton_school-icon-ic_sound"></i>
+            <h5>Lorem ipsum</h5>
+            <p class="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <i class="holberton_school-icon-ic_video"></i>
+            <h5>Lorem ipsum</h5>
+            <p class="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <i class="holberton_school-icon-ic_music"></i>
+            <h5>Lorem ipsum</h5>
+            <p class="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div>
+            <i class="holberton_school-icon-ic_hearing"></i>
+            <h5>Lorem ipsum</h5>
+            <p class="p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
         </div>
-        <div>
-          <i class="holberton_school-icon-ic_video"></i>
-          <h5>Lorem ipsum</h5>
-          <p class="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div>
-          <i class="holberton_school-icon-ic_music"></i>
-          <h5>Lorem ipsum</h5>
-          <p class="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-        <div>
-          <i class="holberton_school-icon-ic_hearing"></i>
-          <h5>Lorem ipsum</h5>
-          <p class="p">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-        </div>
-      </div>
+      </section>
     </main>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const ulList = document.getElementById("ulList");
+      menuBtn.addEventListener("click", () => {
+        ulList.classList.toggle("active");
+        menuBtn.innerHTML = ulList.classList.contains("active")
+          ? "&#10005;"
+          : "&#9776;";
+      });
+    </script>
   </body>
 </html>
