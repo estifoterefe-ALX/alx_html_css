@@ -4,7 +4,7 @@
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="4-styles.css" />
+    <link rel="stylesheet" href="6-styles.css" />
     <link rel="stylesheet" href="/headphones/holberton_school-icon/style.css" />
     <link
       rel="stylesheet"
@@ -39,7 +39,7 @@
       </section>
 
       <section id="whatWeDo">
-        <h1>What we do ...</h1>
+        <h1 class="animate">What we do ...</h1>
         <p id="mainP">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -183,6 +183,21 @@
     <script>
       const menuBtn = document.getElementById("menu-btn");
       const ulList = document.getElementById("ulList");
+      const animate = document.querySelector(".animate");
+      const mainP = document.getElementById("mainP");
+      const pResult = document.getElementById("pResult");
+      window.addEventListener("scroll", () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 200) {
+          animate.classList.add("active");
+          mainP.classList.add("active");
+          pResult.classList.add("active");
+        } else {
+          animate.classList.remove("active");
+          mainP.classList.remove("active");
+          pResult.classList.remove("active");
+        }
+      });
       menuBtn.addEventListener("click", () => {
         ulList.classList.toggle("active");
         menuBtn.innerHTML = ulList.classList.contains("active")

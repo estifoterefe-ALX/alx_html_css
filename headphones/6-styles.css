@@ -70,6 +70,8 @@ form button {
   margin: 10px auto;
   max-width: fit-content;
   padding: 0 100px;
+  transform: translateY(30px);
+  transition: all 0.5s ease-out;
 }
 
 .p2 {
@@ -138,6 +140,15 @@ form button {
   font-size: 32px;
   margin-bottom: 40px;
   margin-top: 100px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease-out;
+}
+#whatWeDo h1.active,
+#mainP.active,
+#pResult.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 #mainP {
   font-family: "Source Sans Pro", sans-serif;
@@ -148,6 +159,8 @@ form button {
   margin: 10px auto;
   max-width: 800px;
   padding: 0 100px;
+  transform: translateY(30px);
+  transition: all 0.5s ease-out;
 }
 #whatWeDo h5 {
   color: #071629;
@@ -441,4 +454,12 @@ svg {
 polygon {
   fill: #ff6565;
   stroke-width: 4px;
+}
+@keyframes moveBox {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
 }
